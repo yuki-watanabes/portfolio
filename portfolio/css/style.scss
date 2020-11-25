@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+$base-color:#fff;
+$assort-color:#000;
+$accent-color:#CC99FF;
+// $accent-color:#9400d3;
+
+
+body {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
+    "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
+    "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: .8px;
+    word-break: break-all;
+    background-color: $base-color;
+    color: $assort-color;
+}   
+
+header{
+    width: 100%;
+    height: 540px;
+    // ------------------------
+    //  画像入れない場合必要
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // ----------------------
+
+    // ↓うまくいかない？！
+    // background-image: url("img/main.jpg");
+    // background-size: contain;
+}
+.main {
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(-45deg, #F27373 0%, #F27373 50%, #0D0A65 50%, #0D0A65 100%);
+
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            font-size: 2em;
+            font-weight: bold;
+            color: #fff 
+    
+        }
+        p:before {
+            // 「/A」は、contentで改行するときのもの
+            content: "YUKI WATANABES'/A PORTFOLIO";
+            color: #555555;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            overflow: hidden;
+        }
+    }
+
+    
+    
+    .container{
+        max-width: 1200px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+    
+    // ※レスポンシブ未対応
+    .nav{
+        position: fixed;
+        top: 10%;
+        right: 20px;
+        writing-mode: vertical-rl;
+        &__list{
+            display: flex; 
+            justify-content: flex-end;
+        }
+        &__link{
+            margin: 10px 0;  
+            text-decoration: none;
+            color: $accent-color;
+        }
+    }
+
+
+
+.ttls{
+    font-size: 48px;
+    color: $accent-color;
+    text-align: center;
+    line-height: .8;
+    // margin-bottom: 20px;   
+}
+
+.ttlxs{
+    font-size: 24px;
+    color: $accent-color;
+    text-align: center;
+    margin-bottom: 10px;   
+}
+
+.contents{
+    margin-bottom: 100px;
+}
+
+.slider-single{
+    margin-bottom: 20px;
+    img{
+        width: 1200px;
+        height: 500px;
+        object-fit: cover;
+    }
+}
+
+.slider-nav{
+    
+    img{
+        margin: 0 auto;
+        width: 200px;
+        height: 100px;
+        object-fit: contain; 
+    }
+}
+
+.about{
+    &-box{
+        display: flex;
+    }
+    &-details{
+        height: 600px;
+        width: 50%;
+        // width: 600px;
+        position: relative;
+    }
+    &-color1{
+        // background-color: $base-color;
+        // テスト用
+        background-color:#555555
+    }
+    &-color2{
+        background-color: $assort-color;
+        color: $base-color;
+    }
+    &__img{
+        position: absolute;
+        top:80px;
+        left:300px;
+
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        //テスト用
+        background-color: aquamarine;
+    }
+    &__txt{
+        position: absolute;
+        top:330px;
+        left:250px;
+
+        width: 330px;
+    }
+}
+
+.skill{
+    &-item{
+        display: flex;
+        width: 300px;
+        margin: 0 146px;
+        border-left: solid 8px $accent-color;/*左側の線*/
+        background: #cbc1cc;/*背景色*/
+        margin-bottom: 5px;/*下のバーとの余白*/;
+    }
+    &-box{
+        display: flex;
+    }
+    &-color1{
+        background-color: #555;
+    }
+    &-color2{
+        background-color: $assort-color;
+        color: $base-color;
+    }
+    &-image{
+        margin: 10px;
+    }
+    &-body{
+        margin:10px 0 20px;
+    }
+}
+
+.contact{
+    &-details{
+        width: 400px;
+    }
+    &-method{
+        margin: 20px 0 10px;
+        img{
+            height: 50px;
+            width: 50px;
+        
+        }
+    }
+}
+
+.pagetop__btn{
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    background: #dcc7f1;
+    box-shadow: 0 2px 15px 0  rgba(220, 172, 240, 0.932);
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    display: none;
+    line-height: 1.3;
+
+    i{
+        color:  rgb(176, 0, 252);
+        font-weight: 900;
+        font-size: 50px;  
+    }
+}
+.footer{
+   background-color: #555555;
+    
+    &-contact-details{
+        position: relative;
+        img{
+            height: 50px;
+            width: 50px;
+            margin: 0 10px;
+        }
+
+    }
+    &-copyright{
+        text-align: right;
+        font-size: 12px;
+        padding: 10px;
+        color: $base-color;
+    }
+}
+
+.email{
+    
+}
+.email-address{
+    display: none;
+    width: 200px;
+    position: absolute;
+    top: -95px;
+    left: 95px;
+    padding: 16px;
+    border-radius: 5px;
+    background: #33cc99;
+    color: #fff;
+    font-weight: bold;
+}
+.email-address:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    bottom: -19px;
+    margin-left: 10px;
+    border: solid transparent;
+    border-color: rgba(51, 204, 153, 0);
+    border-top-color: #33cc99;
+    border-width: 10px;
+    pointer-events: none;
+    content: " ";
+}
+.email:hover + .email-address {
+    display: block;
+}
