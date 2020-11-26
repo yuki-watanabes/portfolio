@@ -109,6 +109,10 @@ header {
      object-fit: contain;
 }
 
+.about .subttl {
+  text-align: center;
+}
+
 .about-box {
   display: -webkit-box;
   display: -ms-flexbox;

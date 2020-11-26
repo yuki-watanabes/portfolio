@@ -126,6 +126,9 @@ header{
 }
 
 .about{
+    .subttl{
+        text-align: center;
+    }
     &-box{
         display: flex;
     }
