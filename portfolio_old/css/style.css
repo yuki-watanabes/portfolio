@@ -1,0 +1,277 @@
+@charset "UTF-8";
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: .8px;
+  word-break: break-all;
+  background-color: #fff;
+  color: #000;
+}
+
+header {
+  width: 100%;
+  height: 540px;
+}
+
+.main {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(-45deg, #F27373 0%, #F27373 50%, #0D0A65 50%, #0D0A65 100%);
+}
+
+.main p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.main p:before {
+  content: "YUKI WATANABES'/A PORTFOLIO";
+  color: #555555;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.nav {
+  position: fixed;
+  top: 10%;
+  right: 20px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav__link {
+  margin: 10px 0;
+  text-decoration: none;
+  color: #CC99FF;
+}
+
+.ttls {
+  font-size: 48px;
+  color: #CC99FF;
+  text-align: center;
+  line-height: .8;
+}
+
+.ttlxs {
+  font-size: 24px;
+  color: #CC99FF;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contents {
+  margin-bottom: 100px;
+}
+
+.slider-single {
+  margin-bottom: 20px;
+}
+
+.slider-single img {
+  width: 1200px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider-nav img {
+  margin: 0 auto;
+  width: 200px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.about .subttl {
+  text-align: center;
+}
+
+.about-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-details {
+  height: 600px;
+  width: 50%;
+  position: relative;
+}
+
+.about-color1 {
+  background-color: #555555;
+}
+
+.about-color2 {
+  background-color: #000;
+  color: #fff;
+}
+
+.about__img {
+  position: absolute;
+  top: 80px;
+  left: 300px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: aquamarine;
+}
+
+.about__txt {
+  position: absolute;
+  top: 330px;
+  left: 250px;
+  width: 330px;
+}
+
+.skill-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  margin: 0 146px;
+  border-left: solid 8px #CC99FF;
+  /*左側の線*/
+  background: #cbc1cc;
+  /*背景色*/
+  margin-bottom: 5px;
+  /*下のバーとの余白*/
+}
+
+.skill-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skill-color1 {
+  background-color: #555;
+}
+
+.skill-color2 {
+  background-color: #000;
+  color: #fff;
+}
+
+.skill-image {
+  margin: 10px;
+}
+
+.skill-body {
+  margin: 10px 0 20px;
+}
+
+.contact-details {
+  width: 400px;
+}
+
+.contact-method {
+  margin: 20px 0 10px;
+}
+
+.contact-method img {
+  height: 50px;
+  width: 50px;
+}
+
+.pagetop__btn {
+  height: 80px;
+  width: 80px;
+  border-radius: 5px;
+  background: #dcc7f1;
+  -webkit-box-shadow: 0 2px 15px 0 rgba(220, 172, 240, 0.932);
+          box-shadow: 0 2px 15px 0 rgba(220, 172, 240, 0.932);
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  bottom: 100px;
+  display: none;
+  line-height: 1.3;
+}
+
+.pagetop__btn i {
+  color: #b000fc;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.footer {
+  background-color: #555555;
+}
+
+.footer-contact-details {
+  position: relative;
+}
+
+.footer-contact-details img {
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
+}
+
+.footer-copyright {
+  text-align: right;
+  font-size: 12px;
+  padding: 10px;
+  color: #fff;
+}
+
+.email-address {
+  display: none;
+  width: 200px;
+  position: absolute;
+  top: -95px;
+  left: 95px;
+  padding: 16px;
+  border-radius: 5px;
+  background: #33cc99;
+  color: #fff;
+  font-weight: bold;
+}
+
+.email-address:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  bottom: -19px;
+  margin-left: 10px;
+  border: solid transparent;
+  border-color: rgba(51, 204, 153, 0);
+  border-top-color: #33cc99;
+  border-width: 10px;
+  pointer-events: none;
+  content: " ";
+}
+
+.email:hover + .email-address {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
